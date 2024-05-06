@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/focus-5e6dd75f.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,234 +15,190 @@
       rel="stylesheet"
     />
     <title>calendle</title>
-    <script type="module" crossorigin src="./assets/index-8265667b.js"></script>
-    <link rel="stylesheet" href="./assets/index-8f4c347f.css">
+    <script type="module" crossorigin src="./assets/main-2294b48d.js"></script>
+    <link rel="stylesheet" href="./assets/main-20f6aba2.css">
   </head>
-  <body class="max-w-[800px] m-auto p-5">
-    <div id="nav" class="flex pb-8">
-      <div class="grow">calendle</div>
-      <div class="flex gap-x-3 font-light">
-        <a href="#bullet" class="max-[400px]:hidden">bullets</a>
-        <a href="#mode" class="max-[400px]:hidden">modes</a>
-        <a href="#hotkey" class="max-[400px]:hidden">hotkeys</a>
-        <a href="#app" class="underline underline-offset-[5px]">app</a>
-      </div>
+  <!-- pointer -->
+  <!-- <body class="cursor-[url(./images/todo.svg),_pointer]"> -->
+  <!-- fixed bottom nav -->
+  <body>
     </div>
-    <div id="intro" class="flex gap-x-2 py-12 flex-col gap-y-8">
-      <div class="flex flex-col self-center gap-y-2">
-        <div class="text-3xl leading-relaxed">
-          yet another
-          <span class="bg-[#E5C5C5] rounded-[3px] px-[7px]">way</span> to be
-          <span class="bg-[#E1E6E0] rounded-[3px] px-[7px]">productive</span>
+    <div class="flex flex-col h-screen p-3">
+      <div class="flex justify-between">
+        <div class="font-bold">
+          <div><span class="hover:underline decoration-[7px]">calendle.</span></div>
+          <div><span class="hover:underline decoration-[7px]">yet another way to be productive.</span></div>
         </div>
-        <div>with a digital bullet journal and hotkey heavy controls.</div>
-      </div>
-      <div class="">
-        <div
-          class="flex overflow-x-scroll bg-[#E1E6E0] rounded-[4px] my-12 border-[1px] border-[#555555]"
+        <a
+          class="underline decoration-[7px] hover:decoration-[3px] hover:line-through"
+          href="#app"
+          >app</a
         >
+      </div>
+      <div class="flex flex-col grow place-content-center self-center gap-3">
+        <div class="flex gap-3">
           <img
-            src="./assets/design_1-42d16312.png"
+            src="./assets/todo-642f1deb.svg"
+            class="transition duration-300 animate-[wiggle_2s_ease-in-out_infinite] w-[12vw] max-w-[100px]"
             alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
           />
           <img
-            src="./assets/design_2-64bc382d.png"
+            src="./assets/note-98852fce.svg"
+            class="transition duration-300 hover:rotate-45 w-[12vw] max-w-[100px]"
             alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
-          <img
-            src="./assets/design_3-931d6965.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
-          <img
-            src="./assets/design_4-419f4d13.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
-          <img
-            src="./assets/design_5-625b22ea.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
           />
         </div>
-        <!-- <img src="./images/pattern.png" alt="" class="w-[100%]" /> -->
+        <div class="flex gap-3">
+          <img
+            src="./assets/done-9eb416e2.svg"
+            class="transition duration-300 hover:rotate-45 w-[12vw] max-w-[100px]"
+            alt=""
+          />
+          <img
+            src="./assets/focus-5e6dd75f.svg"
+            class="transition duration-300 hover:rotate-45 w-[12vw] max-w-[100px]"
+            alt=""
+          />
+        </div>
       </div>
+      <!-- <div class="justify-self-end">
+        with a digital bullet journal and quirky features.
+      </div> -->
+    </div>
+    <div class="flex py-20 max-[1000px]:flex-col">
+      <img
+        src="./assets/design_1-42d16312.png"
+        class="object-scale-down w-[50%] border-[#232323] border-y-[7px] px-5 py-20 max-[1000px]:w-[100%]"
+        alt=""
+      />
+      <img
+        src="./assets/design_3-931d6965.png"
+        class="object-scale-down w-[50%] border-[#232323] border-y-[7px] px-5 py-20 max-[1000px]:hidden"
+        alt=""
+      />
     </div>
     <div
-      id="welcome"
-      class="flex my-12 py-14 justify-center border-[3px] border-[#555555] rounded-[4px]"
+      class="px-3 pb-20 border-b-[7px] border-[#232323] text-[3rem] max-[700px]:text-[2rem]"
     >
-      welcome to calendle 👋
+      I never
+      <span
+        class="border-[3px] px-3 rounded-[30px] hover:bg-[#ffffff] border-[#ffffff]"
+        >dreamed&nbsp;to</span
+      >
+      be productive. i just wanted to
+      <span
+        class="border-[3px] px-3 rounded-[30px] hover:bg-[#ffffff] border-[#ffffff] text-nowrap"
+        >have&nbsp;fun</span
+      >
+      planning with a digital bullet journal and quirky features.
     </div>
-    <div class="py-10">
-      <img src="data:image/png;base64,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" alt="" />
-    </div>
-    <div id="feature" class="flex flex-col gap-y-20 pt-12">
-      <div id="bullet">
-        <div>
-          <span class="text-base align-top pr-3 font-light">
-            more accurate bullets
-          </span>
-          <span class="text-3xl font-light">
-            In addition to the typical to-do and done bullets, calendle offers
-            more bullets to make being productive more joyful.
-          </span>
+    <!-- TODO add weekday feature -->
+    <div id="feature">
+      <a
+        class="flex items-center space-between border-b-[7px] border-[#232323] py-10 px-3 group hover:bg-[#d96c2d] tracking-[0.3rem] transition duration-300"
+        href="./pages/bullets.html"
+      >
+        <div class="grow text-[3rem] max-[700px]:text-[2.0rem] font-extrabold">
+          bullets
         </div>
-        <div class="text-base pt-4 pl-7">
-          <div>&#x25AA; to-do</div>
-          <div>&#x25C6; to-focus</div>
-          <div class="text-[#C4C4C4] line-through">&#215; done</div>
-          <div class="text-[#C4C4C4]">
-            &#215; worked on it but didn't finished
-          </div>
-          <div class="text-[#C4C4C4]">&#xbb; moved to future date</div>
-          <div class="text-[#C4C4C4]">&#xab; moved to someday section</div>
-          <div>&#8211; note</div>
-          <div># header</div>
+        <img
+          src="./assets/todo-642f1deb.svg"
+          class="h-[2rem] group-hover:rotate-45 transition duration-300"
+          alt=""
+        />
+      </a>
+      <a
+        class="flex items-center space-between border-b-[7px] border-[#232323] py-10 px-3 group hover:bg-[#d96c2d] tracking-[0.3rem] transition duration-300"
+        href="./pages/mode.html"
+      >
+        <div class="grow text-[3rem] max-[700px]:text-[2.0rem] font-extrabold">
+          edit/hover mode
         </div>
-        <div class="text-base align-top pr-3 font-light pt-3">
-          you can type --- as bullet text and it will create a divider - a
-          horizontal line.
+        <img
+          src="./assets/focus-5e6dd75f.svg"
+          class="h-[2rem] group-hover:rotate-45 transition duration-300"
+          alt=""
+        />
+      </a>
+      <a
+        class="flex items-center space-between border-b-[7px] border-[#232323] py-10 px-3 group hover:bg-[#d96c2d] tracking-[0.3rem] transition duration-300"
+        href="./pages/hotkeys.html"
+      >
+        <div class="grow text-[3rem] max-[700px]:text-[2.0rem] font-extrabold">
+          hotkeys
         </div>
-      </div>
-      <div id="mode">
-        <span class="text-base align-top pr-3 font-light">
-          different modes
-        </span>
-        <span class="text-3xl font-light">
-          The typical and most common mode is the writing/editing mode. But
-          calendle includes another mode too. The hover mode.
-          <span class="text-base"
-            >It allows you to move fast through your bullets with the keyboard.
-            It allows you to move bullets between weekdays or to the someday
-            section. You can easily copy-paste bullets and create new ones. It
-            is inspired by VIM.</span
-          >
-        </span>
-      </div>
-      <div id="hotkey">
-        <div>
-          <span class="text-base align-top pr-3 font-light">
-            flowlike movement with hotkeys
-          </span>
-          <span class="text-3xl font-light">
-            Calendle has build-in hotkeys. So you never have to lift your hands
-            form the keyboard. Just ignore the mouse. Some available hotkeys
-            are:
-          </span>
+        <img
+          src="./assets/done-9eb416e2.svg"
+          class="h-[2rem] group-hover:rotate-45 transition duration-300"
+          alt=""
+        />
+      </a>
+      <a
+        class="flex items-center space-between border-b-[7px] border-[#232323] py-10 px-3 group hover:bg-[#d96c2d] tracking-[0.3rem] transition duration-300"
+        href="./pages/lists.html"
+      >
+        <div class="grow text-[3rem] max-[700px]:text-[2.0rem] font-extrabold">
+          weekday+lists
         </div>
-        <div class="text-base pt-4 pl-7">
-          <div><span class="font-semibold">enter:</span>add bullet</div>
-          <div><span class="font-semibold">arrow up:</span>move up</div>
-          <div><span class="font-semibold">arrow down:</span>move down</div>
-          <div>
-            <span class="font-semibold">meta+i:</span>iterate through bullet
-            types
-          </div>
-          <div><span class="font-semibold">meta+j:</span>move bullet down</div>
-          <div><span class="font-semibold">meta+k:</span>move bullet up</div>
-          <div>
-            <span class="font-semibold">meta+h:</span>go to previous week
-          </div>
-          <div><span class="font-semibold">meta+l:</span>go to next week</div>
-          <div>
-            <span class="font-semibold">meta+t:</span>go to current week
-          </div>
-          <div><span class="font-semibold">esc:</span>activate hover mode</div>
-          <div class="pt-3 pb-1">additionally, in hover mode:</div>
-          <div><span class="font-semibold">i:</span>deactivate hover mode</div>
-          <div><span class="font-semibold">a:</span>deactivate hover mode</div>
-          <div><span class="font-semibold">j:</span>move down</div>
-          <div><span class="font-semibold">k:</span>move up</div>
-          <div><span class="font-semibold">d:</span>delete bullet</div>
-          <div><span class="font-semibold">y:</span>copy bullet</div>
-          <div>
-            <span class="font-semibold">p:</span>paste deleted/copied bullet
-          </div>
-          <div>
-            <span class="font-semibold">o:</span>add bullet and deactivate
-            hover mode
-          </div>
+        <img
+          src="./assets/todo-642f1deb.svg"
+          class="h-[2rem] group-hover:rotate-45 transition duration-300"
+          alt=""
+        />
+      </a>
+      <a
+        class="flex items-center space-between border-b-[7px] border-[#232323] py-10 px-3 group hover:bg-[#d96c2d] tracking-[0.3rem] transition duration-300"
+        href="./pages/timer.html"
+      >
+        <div class="grow text-[3rem] max-[700px]:text-[2.0rem] font-extrabold">
+          focus timer
         </div>
-        <div class="text-base align-top pr-3 font-light pt-3">
-          you can also find a detailed description about the hotkeys inside the
-          app. Just hover over the bottom left corner and a clickable question
-          mark (?) will appear.
-        </div>
-      </div>
-      <div id="private">
-        <span class="text-base align-top pr-3 font-light">
-          prioritize privacy
-        </span>
-        <span class="text-3xl font-light">
-          No sign up. No sign in. A simple download. And, all of your data is
-          stored locally on your machine.
-        </span>
-      </div>
-      <div id="app">
-        <span class="text-base align-top pr-3 font-light">
-          the calendle app
-        </span>
-        <span class="text-3xl font-light">
-          A simple, joyful, bullet-journal-like productivity app. It's free and
-          available for
-          <a
-            class="underline underline-offset-[5px]"
-            href="https://github.com/kemaltekce/calendle/releases/download/v0.3.0/calendle-0.3.0-arm64.dmg"
-            download
-            >MacOS</a
-          >.
-          <span class="text-base">
-            If you like calendle and want to support it, you can donate a cup
-            of coffee (ko-fi comming soon).
-          </span>
-        </span>
-        <img src="./assets/app-27021e93.png" alt="" class="px-3 pt-12" />
-      </div>
-      <div id="design">
-        <span class="text-base align-top pr-3 font-light">
+        <img
+          src="./assets/focus-5e6dd75f.svg"
+          class="h-[2rem] group-hover:rotate-45 transition duration-300"
+          alt=""
+        />
+      </a>
+      <a
+        class="flex items-center space-between border-b-[7px] border-[#232323] py-10 px-3 group hover:bg-[#d96c2d] tracking-[0.3rem] transition duration-300"
+        href="./pages/design.html"
+      >
+        <div class="grow text-[3rem] max-[700px]:text-[2.0rem] font-extrabold">
           hidden designs
-        </span>
-        <span class="text-3xl font-light">
-          You can change the design and adjust it to one of five available
-          options. But the buttons to toggle between designs are hidden.
-        </span>
-        <div
-          class="flex overflow-x-scroll bg-[#E1E6E0] rounded-[4px] my-12 border-[1px] border-[#555555]"
-        >
-          <img
-            src="./assets/design_1-42d16312.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
-          <img
-            src="./assets/design_2-64bc382d.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
-          <img
-            src="./assets/design_3-931d6965.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
-          <img
-            src="./assets/design_4-419f4d13.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
-          <img
-            src="./assets/design_5-625b22ea.png"
-            alt=""
-            class="px-3 py-12 w-[90%] max-h-[500px] object-scale-down"
-          />
         </div>
-      </div>
+        <img
+          src="./assets/done-9eb416e2.svg"
+          class="h-[2rem] group-hover:rotate-45 transition duration-300"
+          alt=""
+        />
+      </a>
+      <a
+        class="flex items-center space-between border-b-[7px] border-[#232323] py-10 px-3 group hover:bg-[#d96c2d] tracking-[0.3rem] transition duration-300"
+        href="./pages/privacy.html"
+      >
+        <div class="grow text-[3rem] max-[700px]:text-[2.0rem] font-extrabold">
+          privacy
+        </div>
+        <img
+          src="./assets/todo-642f1deb.svg"
+          class="h-[2rem] group-hover:rotate-45 transition duration-300"
+          alt=""
+        />
+      </a>
+      <div>
     </div>
-    <div id="footer" class="flex flex-col py-12 items-center gap-y-7">
-      <p>made with ❤️ in Münster</p>
-      <img src="data:image/png;base64,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" alt="" />
+    <div id="app" class="py-20 px-3 text-[3rem] max-[700px]:text-[2rem]">
+      <div>
+        A simple, joyful, bullet-journal-like productivity app. It's free and
+        available for MacOS.
+      </div>
+      <a
+        href="https://github.com/kemaltekce/calendle/releases/download/v0.3.0/calendle-0.3.0-arm64.dmg"
+        class="font-extrabold border-[#232323] border-[7px] flex items-center mt-5 hover:bg-[#232323] hover:text-[#ffffff]"
+      >
+        <div class="grow border-r-[7px] border-[#232323] pl-3">download</div>
+        <img src="./assets/arrow-9861bb51.svg" class="h-[2rem] w-[4rem]" alt="" />
+      </a>
     </div>
     
   </body>
