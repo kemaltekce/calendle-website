@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   font-family: Roboto Mono;
   line-height: 1.5;
   font-weight: 400;
   color: #555555;
   background-color: #f0f0f0;
+  font-size: 16px;
+} */
+
+:root {
+  font-family: Inter;
+  line-height: 1.5;
+  font-weight: 400;
+  /* color: #232323; */
+  color: #232323;
+  background-color: #ef7934;
+  /* background-color: #d96c2d; */
+  /* background-color: #c5cefe; */
+  /* background-color: #8d85ea; */
   font-size: 16px;
 }
 
